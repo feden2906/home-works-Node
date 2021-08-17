@@ -1,1 +1,1 @@
-console.log(5345345)
+console.log('yura')
