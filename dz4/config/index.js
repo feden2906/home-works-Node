@@ -1,4 +1,5 @@
 module.exports = {
-  userRoles: require('./userRoles.enum'),
-  variables: require('./variables'),
+    schemas: require('./schemas.enum'),
+    userRoles: require('./userRoles.enum'),
+    variables: require('./variables'),
 };

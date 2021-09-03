@@ -1,4 +1,4 @@
 module.exports = {
-  carDB: require('./Car.db'),
-  userDB: require('./User.db')
+    carDB: require('./Car.db'),
+    userDB: require('./User.db')
 };

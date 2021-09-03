@@ -22,7 +22,7 @@ module.exports = {
     createCar: async (req, res, next) => {
         try {
             const createdCar = await carDB.create(req.body);
-            res.json(createdCar);
+            res.status(201).json(createdCar);
         } catch (e) {
             next(e);
         }
@@ -32,7 +32,7 @@ module.exports = {
         try {
             const { car_id } = req.params;
             await carDB.findByIdAndDelete(car_id);
-            res.json('car is deleted');
+            res.status(204).json('car is deleted');
         } catch (e) {
             next(e);
         }
@@ -42,10 +42,9 @@ module.exports = {
         try {
             const { car_id } = req.params;
             await carDB.findByIdAndUpdate(car_id, req.body);
-            res.json('car is updated');
+            res.status(201).json('car is updated');
         } catch (e) {
             next(e);
         }
     }
-
 };
