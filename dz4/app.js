@@ -21,7 +21,6 @@ app.use('/cars', carRouter);
 
 app.use('*', _notFoundError);
 app.use(_mainErrorHandler);
-console.log('bhfdfvdfd');
 
 app.listen(PORT, () => {
     console.log(`App listening ${PORT}`);
